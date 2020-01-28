@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fighting Human Trafficking</title>
+    
+<style>
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color:rgb(0, 0, 0);
+    font-size: 100%;
+    font-weight: bold;
+    
+}
+    body {
+        text-align: left;
+        padding-left: 25px;
+        background-color: rgb(255, 253, 208);
+    }
+    h1 {
+        color: rgb(0, 0, 0);
+    }
+    
+    .Correct {
+        background-color: lawngreen;
+    }
+    
+    .Incorrect {
+        background-color: red;
+    }
+    .nocolor {
+    background-color: rgb(255, 253, 208);
+}
+    
+    #Next {
+        display: none;
+        font-weight: bold;
+        font-size: 130%;
+        color:darkturquoise;
+        padding-bottom: 30px;
+    }
+    
+</style>
+</head>
+<body >
+ 
+
+<div id="maincontainer">
+
+<div id="topsection"><h1>Quiz 1: Defining the Topic</h1></div></div>
+
+<br>
+   
+        <span>
+             <form id="quiz" name="quiz">
+               
+                 <p>Who passed the Palermo Protocol?</p>
+                 <br>
+                 <label for="q1a" class="Incorrect nocolor">
+                 <input type="radio" name="q1" id="q1a" value="a">The USA</label> <br>
+                 <label for="q1b" class="Incorrect nocolor">
+                 <input type="radio" name="q1" id="q1b" value="b">Australia</label> <br>
+                  <label for="q1c" class="Correct nocolor">
+                     <input type="radio" name="q1" id="q1c" value="c">The UN</label> <br>
+                  <label for="q1d" class="Incorrect nocolor">
+                 <input type="radio" name="q1" id="q1d" value="d">South Korea</label> <br>
+                 <br>
+                 
+                 <p>Which of the following countries passed the Trafficking Victims Protection Act and what year was it passed?</p>
+                 <br>
+                 <label for="q2a" class="Incorrect nocolor">
+                 <input type="radio" name="q2" id="q2a" value="a">Indonesia and 2005</label> <br>
+                 <label for="q2b" class="Incorrect nocolor">
+                 <input type="radio" name="q2" id="q2b" value="b">Canada and 1998</label> <br>
+                 <label for="q2c" class="Incorrect nocolor">
+                 <input type="radio" name="q2" id="q2c" value="c">Mexico and 2001</label> <br>
+                 <label for="q2d" class="Correct nocolor">
+                 <input type="radio" name="q2" id="q2d" value="d">USA and 2000</label> <br> <br>
+                 <br>
+                 
+                 <p>What was not included when you gave a simplified definition of human trafficking to Lynn?</p>
+                 <br>
+                  <label for="q3a" class="Incorrect nocolor">
+                 <input type="radio" name="q3" id="q3a" value="a">Recruitment</label> <br>
+                  <label for="q3b" class="Incorrect nocolor">
+                 <input type="radio" name="q3" id="q3b" value="b">Transportation</label> <br>
+                  <label for="q3c" class="Correct nocolor">
+                     <input type="radio" name="q3" id="q3c" value="c">Indentured Servitude</label> <br>
+                  <label for="q3d" class="Incorrect nocolor">
+                 <input type="radio" name="q3" id="q3d" value="d">Harboring and Receipt</label> <br>
+                  <label for="q3e" class="Incorrect nocolor">
+                 <input type="radio" name="q3" id="q3e" value="e">Transfer</label> <br><br>
+                 
+                 <p>Which of the following was not included as an example of exploitation?</p>
+                 <label for="q4a" class="Incorrect nocolor">
+                 <input type="radio" name="q4" id="q4a" value="a">Exploitation</label> <br>
+                <label for="q4b" class="Correct nocolor">
+                 <input type="radio" name="q4" id="q4b" value="b">Withholding Payment</label> <br> 
+                 <label for="q4c" class="Incorrect nocolor">
+                 <input type="radio" name="q4" id="q4c" value="c">Forced Labour</label> <br>
+                 <label for="q4d" class="Incorrect nocolor">
+                 <input type="radio" name="q4" id="q4d" value="d">Slavery</label> <br>
+                 <label for="q4e" class="Incorrect nocolor">
+                 <input type="radio" name="q4" id="q4e" value="e">Servitude</label> <br>
+                 <label for="q4f" class="Incorrect nocolor">
+                 <input type="radio" name="q4" id="q4f" value="f">Organ Removal</label> <br><br>
+                 
+                  <p>Which of the following was not discussed while you provided Lynn a definition of sex trafficking? </p>
+                 <label for="q5a" class="Incorrect nocolor">
+                 <input type="radio" name="q5" id="q5a" value="a">Coercion</label> <br>
+                  <label for="q5b" class="Incorrect nocolor">
+                 <input type="radio" name="q5" id="q5b" value="b">Fraud</label> <br> 
+                  <label for="q5c" class="Incorrect nocolor">
+                 <input type="radio" name="q5" id="q5c" value="c">Younger than 18</label> <br>
+                 <label for="q5d" class="Correct nocolor">
+                 <input type="radio" name="q5" id="q5d" value="d">Abduction</label> <br> 
+                  <label for="q5e" class="Incorrect nocolor">
+                 <input type="radio" name="q5" id="q5e" value="e">Force</label> <br><br>
+                 <br/>
+                 <input type="button" value="submit" onclick="check()">
+                 
+                 
+            </form>
+    
+            <script>
+                function check(){
+                    var q1=document.quiz.q1.value;
+                    var q2=document.quiz.q2.value;
+                    var q3=document.quiz.q3.value;
+                    var q4=document.quiz.q4.value;
+                    var q5=document.quiz.q5.value;
+                    var count = 0;
+                    
+                    
+                    if (q1=="c"){
+                            count++;
+                    }
+                    
+                    if (q2=="d"){
+                            count++;
+                    }
+                    
+                    if (q3=="c"){
+                            count++;
+                    }
+                    
+                    if (q4=="b"){
+                            count++;
+                    }
+                    
+                    if (q5=="d"){
+                            count++;
+                    }
+                    var final = (count/5) * 100
+                    alert("Your got " + final + "%  correct!");
+                    
+                    
+                    var elem = document.getElementsByClassName("nocolor");
+                    while (elem.length)
+                    elem[0].className = elem[0].className.replace(/\bnocolor\b/g, "");
+                    
+                    var elem = document.getElementById('Next'); elem.style.display = 'inline';
+                }
+    
+            
+    
+            </script>
+            
+                 <br><br>
+            
+            <a id="Next" href="page6.html"> Continue</a> </span>
+
+
+
+
+</body>
+</html>
