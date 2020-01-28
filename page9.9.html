@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fighting Human Trafficking</title>
+   
+<style>
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color:rgb(0, 0, 0);
+    font-size: 100%;
+    font-weight: bold;
+    
+}
+    body {
+        text-align: left;
+        padding-left: 25px;
+        background-color: rgb(255, 253, 208);
+    }
+    h1 {
+        color: rgb(0, 0, 0);
+    }
+    
+    .Correct {
+        background-color: lawngreen;
+    }
+    
+    .Incorrect {
+        background-color: red;
+    }
+    .nocolor {
+    background-color: rgb(255, 253, 208);
+}
+    
+    #Next {
+        display: none;
+        font-weight: bold;
+        font-size: 130%;
+        color:darkturquoise;
+        padding-bottom: 30px;
+    }
+
+</style> 
+</head>
+<body onload="getlocalstorage()">
+  <!--  <input type="text" id="txt_username" name="username" value="" />
+    <input type="button" onclick="storedata()" name="name" value="Store UserName" />
+    <span id="span1"> </span> --->
+
+<div id="maincontainer">
+
+<div id="topsection"><h1>Quiz 2: Methods and Statistics</h1></div></div>
+
+<br>
+   
+        <span class="blue_bg">
+        
+             <form id="quiz" name="quiz">
+               
+                 <p>Which of the folllowing was not included as a method of trafficking?</p>
+                 <br>
+                 <label for="q1a" class="Incorrect nocolor">
+                 <input type="radio" name="q1" id="q1a" value="a">Coercion</label> <br>
+                <label for="q1b" class="Incorrect nocolor">
+                 <input type="radio" name="q1" id="q1b" value="b">Abduction</label> <br>
+                 <label for="q1c" class="Correct nocolor">
+                 <input type="radio" name="q1" id="q1c" value="c">Auction</label> <br>
+                 <label for="q1d" class="Incorrect nocolor">
+                 <input type="radio" name="q1" id="q1d" value="d">Deception</label> <br>
+                 <label for="q1e" class="Incorrect nocolor">
+                 <input type="radio" name="q1" id="q1e" value="e">Fraud</label> <br>
+                 <br>
+                 
+                 <p>How lucrative is the industry?</p>
+                 <br>
+                 <label for="q2a" class="Incorrect nocolor">
+                 <input type="radio" name="q2" id="q2a" value="a">$48 million per year</label> <br>
+                 <label for="q2b" class="Incorrect nocolor">
+                 <input type="radio" name="q2" id="q2b" value="b">$12 billion per year</label> <br>
+                 <label for="q2c" class="Incorrect nocolor">
+                 <input type="radio" name="q2" id="q2c" value="c">$80 million per year</label> <br>
+                <label for="q2d" class="Correct nocolor">
+                 <input type="radio" name="q2" id="q2d" value="d">$99 million per year</label> <br>
+                 <label for="q2e" class="Incorrect nocolor">
+                 <input type="radio" name="q2" id="q2e" value="e">$25 million per year</label> <br>
+                 <br>
+                 
+                 <p>How many adults and children are bought and sold worldwide?</p>
+                 <br>
+                 <label for="q3a" class="Incorrect nocolor">
+                 <input type="radio" name="q3" id="q3a" value="a">Less than 5.2 million</label> <br>
+                 <label for="q3b" class="Incorrect nocolor">
+                 <input type="radio" name="q3" id="q3b" value="b">Between 5.2 and 10.4 million</label> <br> 
+                 <label for="q3c" class="Incorrect nocolor">
+                 <input type="radio" name="q3" id="q3c" value="c">Between 15.7 and 20.6</label> <br> 
+                 <label for="q3d" class="Correct nocolor">
+                 <input type="radio" name="q3" id="q3d" value="d">At least 20.9 million</label> <br> <br>
+                 
+                 <p>How many children are exploited every year in the global commercial sex trade?</p>
+                 <label for="q4a" class="Incorrect nocolor">
+                 <input type="radio" name="q4" id="q4a" value="a">4 billion</label> <br>
+                 <label for="q4b" class="Incorrect nocolor">
+                 <input type="radio" name="q4" id="q4b" value="b">12 million</label> <br>
+                 <label for="q4c" class="Correct nocolor">
+                 <input type="radio" name="q4" id="q4c" value="c">2 million</label> <br>
+                 <label for="q4d" class="Incorrect nocolor">
+                 <input type="radio" name="q4" id="q4d" value="d">2 billion</label> <br> 
+                 <label for="q4e" class="Incorrect nocolor">
+                 <input type="radio" name="q4" id="q4e" value="e">5 million</label> <br> <br>
+                 
+                 <p>What percentage of trafficking victims are trafficked for sexual exploitation?</p>
+                 <label for="q5a" class="Correct nocolor">
+                 <input type="radio" name="q5" id="q5a" value="a">54%</label> <br> 
+                 <label for="q5b" class="Incorrect nocolor">
+                 <input type="radio" name="q5" id="q5b" value="b">72%</label> <br>
+                 <label for="q5c" class="Incorrect nocolor">
+                 <input type="radio" name="q5" id="q5c" value="c">48%</label> <br>
+                 <label for="q5d" class="Incorrect nocolor">
+                 <input type="radio" name="q5" id="q5d" value="d">59%</label> <br>
+                 <label for="q5e" class="Incorrect nocolor">
+                 <input type="radio" name="q5" id="q5e" value="e">62%</label> <br>
+                 
+                 <p>What percentage of victims of trafficking for sexual exploitation are male?</p>
+                 <label for="q6a" class="Incorrect nocolor">
+                 <input type="radio" name="q6" id="q6a" value="a">77%</label> <br>
+                <label for="q6b" class="Incorrect nocolor">
+                 <input type="radio" name="q6" id="q6b" value="b">8%</label> <br>
+                 <label for="q6c" class="Incorrect nocolor">
+                 <input type="radio" name="q6" id="q6c" value="c">23%</label> <br>
+                 <label for="q6d" class="Incorrect nocolor">
+                 <input type="radio" name="q6" id="q6d" value="d">96%%</label> <br>
+                 <label for="q6e" class="Correct nocolor">
+                 <input type="radio" name="q6" id="q6e" value="e">4%</label> <br>
+                 <br/>
+                 
+                 <br/>
+                 <input id="button" type="button" value="Submit" onclick="check()">
+                 
+                 
+            </form>
+            
+             
+             <script>
+                function check(){
+                    var q1=document.quiz.q1.value;
+                    var q2=document.quiz.q2.value;
+                    var q3=document.quiz.q3.value;
+                    var q4=document.quiz.q4.value;
+                    var q5=document.quiz.q5.value;
+                    var q6=document.quiz.q6.value;
+                    
+                    var count = 0;
+                    
+                    
+                    if (q1=="c"){
+                            count++;
+                    }
+                    
+                    if (q2=="d"){
+                            count++;
+                    }
+                    
+                    if (q3=="d"){
+                            count++;
+                    }
+                    
+                    if (q4=="c"){
+                            count++;
+                    }
+                    
+                    if (q5=="a"){
+                            count++;
+                    }
+                    
+                     if (q6=="e"){
+                            count++;
+                    }
+                    var final = (count/6) * 100
+                    alert("Your got " + final + "%  correct!");
+                    
+                    
+                    var elem = document.getElementsByClassName("nocolor");
+                    while (elem.length)
+                    elem[0].className = elem[0].className.replace(/\bnocolor\b/g, "");
+                    
+                    var elem = document.getElementById('Next'); elem.style.display = 'inline';
+                }
+    
+            
+    
+            </script>
+            <br><br>
+                 
+                 
+            <a id="Next" href="page19.html"> Continue</a> </span>
+
+
+
+
+</body>
+</html>
